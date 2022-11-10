@@ -1,315 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
-    <style>
-        #navbar {
-            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-            width: 100%;
-            height: 70px;
-            display: flex;
-            align-items: center;
-            background-color: white;
-            position: fixed;
-            top: 0px;
-        }
-
-        #navbar>div:nth-child(1) {
-            width: 10%;
-            height: 100%;
-            margin-left: 30px;
-            cursor: pointer;
-        }
-
-        #navbar>div:nth-child(1)>img {
-            width: 100%;
-            height: 100%;
-        }
-
-        #navbar>div:nth-child(2) {
-            width: 45%;
-            height: 30%;
-            display: flex;
-            justify-content: space-evenly;
-            font-family: sans-serif;
-            font-size: 13px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        #navbar>input {
-            width: 35%;
-            height: 50%;
-            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
-            border: 0px;
-            background-color: rgb(248, 248, 247);
-            padding-left: 20px;
-            border-radius: 5px;
-        }
-
-        #navbar>div:nth-child(4) {
-            width: 15%;
-            height: 30%;
-            display: flex;
-            justify-content: space-evenly;
-            font-size: 12px;
-            font-family: sans-serif;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        #footer {
-            width: 70%;
-            height: 1000px;
-            margin: auto;
-            margin-top: 100px;
-            font-family: sans-serif;
-        }
-
-        #footer>div:nth-child(1) {
-            width: 100%;
-            height: auto;
-            display: flex;
-        }
-
-        #footer>div:nth-child(1)>div:nth-child(1) {
-            width: 30%;
-            height: auto;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        #footer>div:nth-child(1)>div:nth-child(2) {
-            width: 60%;
-            height: auto;
-            display: flex;
-            justify-content: space-evenly;
-        }
-
-        #footer>div:nth-child(1)>div:nth-child(1)>div {
-            width: 50%;
-            height: 100%;
-        }
-
-        #footer>div:nth-child(1)>div:nth-child(1)>div>div {
-            line-height: 10px;
-            font-size: 14px;
-            color: gray;
-            font-family: sans-serif;
-        }
-
-        #footer>div:nth-child(1)>div:nth-child(1)>div strong {
-            font-size: 12px;
-            color: black;
-            margin-bottom: 30px;
-
-        }
-
-        #footer>div:nth-child(1)>div:nth-child(2)>div:nth-child(1) {
-            width: 50%;
-            height: 100%;
-
-        }
-
-        #footer>div:nth-child(1)>div:nth-child(2)>div:nth-child(1)>div{
-            margin-bottom: 20px;
-            margin-left: 30px;
-        }
-        #footer>div:nth-child(1)>div:nth-child(2)>div:nth-child(1)>div:nth-child(3) {
-            margin-bottom: 10px;
-        }
-        
-        #footer>div:nth-child(1)>div:nth-child(2)>div:nth-child(1)>div strong{
-           font-size: 12px;
-        }
-
-        #footer>div:nth-child(1)>div:nth-child(2)>div:nth-child(2) {
-            width: 50%;
-            height: 100%;
-        }
-        #footer>div:nth-child(1)>div:nth-child(2)>div:nth-child(2) >div{
-            display: flex;
-        }
-        #footer>div:nth-child(1)>div:nth-child(2) strong {
-            font-size: 14px;
-        }
-        #footer>div:nth-child(1)>div:nth-child(2) p {
-            font-size: 14px;
-        }
-        #footer>div:nth-child(1)>div:nth-child(2) img {
-            margin-top: 10px;
-        }
-
-        #footer>div:nth-child(2) {
-            width: 100%;
-            height: 500px;
-            /* border:1px solid red; */
-            line-height: 25px;
-            font-size: 14px;
-            color: grey;
-            font-family: sans-serif;
-        }
-
-        #footer>div:nth-child(2) strong {
-            color: black;
-            margin-top: 5px;
-            margin-bottom: 0px;
-
-        }
-
-        #footer>div:nth-child(2) strong {
-            color: rgb(40, 129, 238);
-        }
-
-        #footer>div:nth-child(2)>div:nth-child(1)>div {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 40px;
-            margin-bottom: 20px;
-        }
-
-        #footer>div:nth-child(2)>div:nth-child(2) {
-            width: 100%;
-            height: 50%;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
-            padding-top: 30px;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        #footer>div:nth-child(2)>div:nth-child(2)>div {
-            width: 40%;
-            height: 100%;
-            font-size: 15px;
-        }
-
-        #footer>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>div {
-            line-height: 10px;
-            margin-top: 40px;
-        }
-
-        #footer>div:nth-child(2)>div:nth-child(2)>div:nth-child(2) {
-            margin-top: 150px;
-            height: auto;
-            line-height: 10px;
-        }
-
-        #footer>div:nth-child(3) {
-            width: 100%;
-            height: auto;
-            color: grey;
-            font-size: 14px;
-            line-height: 20px;
-        }
-
-        #footer>div:nth-child(3) h3 {
-            font-size: 13px;
-            color: rgb(81, 74, 74);
-            margin-bottom: -10px;
-
-        }
-
-        #footer>div:nth-child(3)>div:nth-child(3) {
-            padding-left: 30px;
-        }
-
-        #footer>div:nth-child(3)>div:nth-child(3) strong {
-            color: rgb(81, 74, 74);
-
-        }
-
-        #footer>div:nth-child(3)>div:nth-child(1) {
-            margin-bottom: 30px;
-        }
-
-        #footer>div:nth-child(3)>div:nth-child(4) {
-            margin-bottom: 30px;
-        }
-
-        #footer>div:nth-child(4) {
-            width: 100%;
-            height: auto;
-        }
-
-        #footer>div:nth-child(4)>div>ul {
-            color: grey;
-            font-size: 14px;
-        }
-
-        #footer>div:nth-child(4)>div>ul>li {
-            line-height: 30px;
-        }
-
-        #footer>div:nth-child(4)>div>strong {
-            margin-bottom: 0px;
-            color: rgb(81, 74, 74);
-            font-size: 14px;
-        }
-
-        #footer>div:nth-child(5) {
-            width: 100%;
-            height: auto;
-            margin-top: 30px;
-        }
-
-        #footer>div:nth-child(5) {
-            color: grey;
-            font-size: 14px;
-            line-height: 20px;
-        }
-
-        #footer>div:nth-child(5) strong {
-            color: rgb(81, 74, 74);
-            font-size: 14px;
-        }
-
-        #footer>div:nth-child(6) {
-            width: 100%;
-            height: 500px;
-            color: grey;
-            font-size: 14px;
-            margin-top: 30px;
-        }
-
-        #footer>div:nth-child(6)>div>h4 {
-            color: rgb(81, 74, 74);
-            font-size: 14 px;
-            line-height: 0px;
-        }
-
-
-
-        /* day-2 ends  */
-
-
-
-    </style>
+    <link rel="stylesheet" href="index.css" />
 </head>
-
 <body>
+
+    <!-- navbar of home page -->
+
+
     <div id="navbar">
         <div>
-            <img src="/logo.png" alt="">
+            <img src="./logo.png" alt="">
         </div>
         <div>
-            <div>MEN</div>
-            <div>WOMEN</div>
-            <div>KIDS</div>
-            <div>HOME & LIVING</div>
-            <div>BEAUTY</div>
-            <div>STUDIO</div>
+            <div><a href="">MEN</a></div>
+            <div><a href="">WOMEN</a></div>
+            <div><a href="">KIDS</a></div>
+            <div><a href="">HOME & LIVING</a></div>
+            <div><a href="">BEAUTY</a></div>
+            <div><a href="">STUDIO</a></div>
         </div>
         <input type="text" placeholder="Search for brands and products">
         <div>
-            <div>Profile</div>
-            <div>Wishlist</div>
-            <div>Bag</div>
+            <div><a href="./profile.html">Profile</a></div>
+            <div><a href="">Wishlist</a></div>
+            <div><a href="">Bag</a></div>
         </div>
     </div>
+
+    <!-- products of home page -->
+
+    <div id="slider">
+
+        <!-- appending slider from javascript -->
+    </div>
+    
+   <div id="products">
+       <h1>DEAL OF THE DAY</h1>
+       <div id="dealofday"></div>
+       <h1>BEST OF MYNTRA EXCLUSIVE BRANDS</h1>
+       <div id=""></div>
+       <h1>TOP PICKS</h1>
+       <div id="picks"></div>
+       <h1>CATEGORIES TO BAG</h1>
+       <div id="category"></div>
+       <h1>UNMISSABLE THIS SEASON</h1>
+       <div id="unmissable"></div>
+       <h1>GIFTING CARDS</h1>
+       <div id="gftcard"></div> 
+       <h1>STYLECAST HOTTEST FINDS</h1>
+       <div id="stylecast"></div>
+       <h1>TRENDS FOR HER</h1>
+       <div id="trendher"></div>
+       <h1>TRENDS FOR HIM</h1>
+       <div id="trendhim"></div>
+       <h1>BEST OF KIDSWEAR</h1>
+       <div id="bestkids"></div>
+       <h1>NEW IN TOP BRANDS</h1>
+       <div id="newbrand"></div>
+       <h1>SPRING SUMMER SEASON CHECKLIST</h1>
+       <div id="spring"></div>
+       <h1>NEWNESS FOR EVERY OCCASION</h1>
+       <div id="newness"></div>
+       <h1>LATEST IN BEAUTY & GROOMING</h1>
+       <div id="grooming"></div>
+       <h1>COLOURS OF THE SEASON</h1>
+       <div id="colors"></div>
+       <h1>TOP INFLUENCERS EXCLUSIVE STYLES</h1>
+       <div id="influencer"></div>
+       <h1>BUDGET PICKS INFLUENCERS LOVE</h1>
+       <div id="budget"></div>
+       <h1>TRENDING OUTFITS BY INFLUENCERS</h1>
+       <div id="trending"></div>
+    -->
+    </div>
+
+
+
+    <!-- footer of home page  -->
+
+
     <div id="footer">
         <div>
             <div>
@@ -677,17 +451,9 @@
         </div>
     </div>
 
-
-
-
-    <!-- day-2 end -->
-
-
-
+   <!-- day-2 end -->
 
 </body>
 
 </html>
-<script>
-
-</script>
+<script src="index.js"></script>
