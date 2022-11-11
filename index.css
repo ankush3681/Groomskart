@@ -1,27 +1,31 @@
+
 #navbar {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     width: 100%;
     height: 70px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     background-color: white;
     position: fixed;
     top: 0px;
+    z-index:1;
 }
 
-#navbar>div:nth-child(1) {
+#logo-main {
     width: 10%;
     height: 100%;
     margin-left: 30px;
     cursor: pointer;
+    /* border:1px solid blue; */
 }
 
-#navbar>div:nth-child(1)>img {
+#logo {
     width: 100%;
     height: 100%;
 }
 
-#navbar>div:nth-child(2) {
+#navbar>div:nth-child(2){
     width: 45%;
     height: 30%;
     display: flex;
@@ -30,6 +34,10 @@
     font-size: 13px;
     font-weight: bold;
     cursor: pointer;
+}
+#navbar>div:nth-child(2) a{
+    text-decoration: none;
+    color:black;
 }
 
 #navbar>input {
@@ -52,10 +60,13 @@
     font-weight: bold;
     cursor: pointer;
 }
+#navbar>div:nth-child(4) a{
+    color:black;
+    text-decoration:none;
+}
 
 
-/* ------------------------------------------------------------------------ */
-
+/* ---------------------------------------------------------------------- */
 
 #footer {
     width: 70%;
@@ -275,3 +286,152 @@
     font-size: 14 px;
     line-height: 0px;
 }
+
+/* -------------------------------------------------------------------- */
+
+
+
+/* day-2 ends  */
+
+
+#products img{
+    width:100%;
+    cursor: pointer;
+}
+
+#products h1{
+ margin: 50px 0px 50px 30px;
+font-family:sans-serif;
+color:#3E4152;
+font-weight: 500;
+}
+
+#dealofday{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: auto;
+
+}
+ #picks{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: auto;
+
+}
+#category{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: auto;
+
+}
+#gftcard{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+
+} 
+#trendher{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: auto;
+
+} 
+#trendher >img{
+    width:100%;
+}
+
+#trendhim{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: auto;
+} 
+#bestkids{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: auto;
+} 
+#stylecast{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: auto;
+} 
+#newbrand{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: auto;
+} 
+#spring{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: auto;
+} 
+#unmissable{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: auto;
+} 
+#grooming{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:auto;
+} 
+#colors{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:auto;
+} 
+#newness{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:auto;
+} 
+#influencer{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows:auto;
+} 
+#budget{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows:auto;
+} 
+
+#trending{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows:auto;
+} 
+
+#slider img{
+    width:100%;
+    margin-top: 30px;
+}
+#slider{
+    width:100%;
+    height:400px;
+    background-image: url(./93156ec1-1d4e-417c-8e17-ba56143d4a481667927056281-PreBuzz-Desktop-Banner.webp);
+   background-position: center;
+   background-size: cover;
+    margin-top: 100px;
+    border:1px solid red;
+    border-radius: 10px;
+}
+
+
