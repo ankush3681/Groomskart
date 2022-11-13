@@ -215,6 +215,56 @@
 
 
 
+#container{
+    display: flex;
+}
+
+#features{
+    width:17%;
+  height:1200px;
+  margin-top: 80px;
+}
+
+.section-1{
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+.section-1 >h3{
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 5px;
+ }
+ 
+ #price_filter{
+    width:90%;
+    font-size: 15px;
+    margin: 0px 15px 20px 15px;
+    padding:5px 0px 5px 0px;
+ }
+
+ .section-2{
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+ }
+
+ #brand_filter{
+    width:90%;
+    font-size: 15px;
+    margin: 10px 15px 20px 15px;
+    padding:5px 0px 5px 0px;
+ }
+
+ .section-2 >h3{
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 5px;
+
+ }
+
+
+
+
+
+
+
 #items{
     width:83%;
     height:auto;
@@ -223,8 +273,37 @@
     grid-template-columns: repeat(5,1fr);
     grid-template-rows:auto;
     gap:20px;
-    border:1px solid red;
 }
-#items img{
+#items > div > img{
     width:100%;
+    cursor: pointer;
 }
+
+#items div{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+   height:auto;
+   padding-left: 10px;
+   padding-right: 10px;
+   text-align: center;
+ }
+
+ #items >div > button{
+    background-color: rgb(154, 154, 247);
+    color:white;
+    border:0;
+    padding:10px 10px;
+    font-size: 15px;
+    width:100%;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+ }
+
+ #items >div > button:hover{
+    background-color: rgb(237, 170, 170);
+ }
+
+
+
+
+ 
