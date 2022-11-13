@@ -462,6 +462,19 @@ document.querySelector("#searchbar").addEventListener("input",function(){
 })
 
 
+function myfun1(){
+    kids.sort((a,b)=>{
+        return (a.price-b.price);
+    })
+    Displaydata(kids);
+}
+function myfun2(){
+    kids.sort((a,b)=>{
+        return (b.price-a.price);
+    })
+    Displaydata(kids);
+}
+
 
 
 
@@ -491,3 +504,56 @@ function Displaydata(data){
         document.querySelector("#products").append(x);
     });
 }
+
+
+function brand1(){
+    let ans=kids.filter((ele)=>{
+       return ele.brand=="For Boys";
+    })
+    Displaydata(ans);
+}
+function brand2(){
+    let ans=kids.filter((ele)=>{
+       return ele.brand=="For Girls";
+    })
+    Displaydata(ans);
+}
+
+
+function item1(){
+    let itm=kids.filter((ele)=>{
+        return ele.title=="Clothing Set";
+    })
+    Displaydata(itm);
+}
+function item2(){
+    let itm=kids.filter((ele)=>{
+        return ele.title=="Nightdress";
+    })
+    Displaydata(itm);
+}
+function item3(){
+    let itm=kids.filter((ele)=>{
+        return ele.title=="Kurta";
+    })
+    Displaydata(itm);
+}
+function item4(){
+    let itm=kids.filter((ele)=>{
+        return ele.title=="Top";
+    })
+    Displaydata(itm);
+}
+function item5(){
+    let itm=kids.filter((ele)=>{
+        return ele.title=="Shirt";
+    })
+    Displaydata(itm);
+}
+function item6(){
+    let itm=kids.filter((ele)=>{
+        return ele.title=="Ethnic wear";
+    })
+    Displaydata(itm);
+}
+

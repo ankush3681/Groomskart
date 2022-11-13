@@ -115,7 +115,7 @@ dealday.map((ele)=>{
 ];
 
 trendher.map((ele)=>{
-    
+   
     let img=document.createElement("img");
     img.setAttribute("src",ele);
 

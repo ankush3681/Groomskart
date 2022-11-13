@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>singup/signin</title>
+    <title>kids</title>
     <link rel="stylesheet" href="kids.css">
 </head>
 <body>
@@ -38,27 +38,32 @@
 
 <div id="container">
     <div id="features">
-        <div class="section-1">
-            <h3>Price</h3>
-            <select name="price_price" id="price_filter">
-               <option value="">Sort Price</option>
-               <option value="LTH">Low to High</option>
-               <option value="HTL">High to Low</option>
-            </select>
-       </div>
-       <div class="section-2">
-           <h3>Brand</h3>
-           <select id="brand_filter">
-               <option value="">Sort By Brand</option>
-               <option value="Puma">Puma</option>
-               <option value="Wrong">Wrong</option>
-               <option value="Adidas">Adidas</option>
-               <option value="Campus">Campus</option>
-               <option value="Roadster">Roadster</option>
-               
-           </select>
-       </div>
+        
+     <div id="price_filter">
+        <h3>SORT BY PRICE</h3>
+        <p onclick="myfun1()">Low to High</p>
+        <p onclick="myfun2()">High to Low</p>
+     </div>
+     
+     <div id="child">
+        <h3>SELECT CHILD</h3>
+        <p onclick="brand1()">For Boys</p>
+        <p onclick="brand2()">For Girls</p>
+     </div>
+
+     
+     <div id="item_filter">
+        <h3>SELECT ITEM</h3>
+        <p onclick="item1()">Clothing Set</p>
+        <p onclick="item2()">Nightdress</p>
+        <p onclick="item3()">Kurtas</p>
+        <p onclick="item4()">Top</p>
+        <p onclick="item5()">Shirts</p>
+        <p onclick="item6()">Ethnic Wear</p>
+     </div>
+
     </div>
+
     <div id="products">
     
     </div>

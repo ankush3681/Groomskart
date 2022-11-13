@@ -454,23 +454,22 @@ let i=0;
 
    let wishlist=JSON.parse(localStorage.getItem("wishlist-item")) ||[]
 
+// price sort
+  
+function myfun1(){
+    womens.sort((a,b)=>{
+        return (a.price-b.price);
+    })
+    Displaydata(womens);
+}
+function myfun2(){
+    womens.sort((a,b)=>{
+        return (b.price-a.price);
+    })
+    Displaydata(womens);
+}
 
-   document.querySelector("#price_filter").addEventListener("change",function(){
-    let select=document.querySelector("#price_filter").value;
-    if(select="HTL"){
-        womens.sort((a,b)=>{
-            return (b.price-a.price);
-        })
-        Displaydata(womens);
-    }
-     else if(select="LTH"){
-        womens.sort((a,b)=>{
-            return (a.price-b.price);
-        })
-        Displaydata(womens);
-    }
-});
-
+// searchbar input
 
 document.querySelector("#searchbar").addEventListener("input",function(){
     let q=document.querySelector("#searchbar").value;
@@ -509,6 +508,83 @@ document.querySelector("#searchbar").addEventListener("input",function(){
         });
            
     }
+
+
+
+// brand Selection
+    
+function brand1(){
+    let ans=womens.filter((ele)=>{
+       return ele.brand=="Puma";
+    })
+    Displaydata(ans);
+}
+function brand2(){
+    let ans=womens.filter((ele)=>{
+       return ele.brand=="Roadster";
+    })
+    Displaydata(ans);
+}
+function brand3(){
+    let ans=womens.filter((ele)=>{
+       return ele.brand=="Wrong";
+    })
+    Displaydata(ans);
+}
+function brand4(){
+    let ans=womens.filter((ele)=>{
+       return ele.brand=="Adidas";
+    })
+    Displaydata(ans);
+}
+function brand5(){
+    let ans=womens.filter((ele)=>{
+       return ele.brand=="Campus";
+    })
+    Displaydata(ans);
+}
+
+// items selection
+
+function item1(){
+    let itm=womens.filter((ele)=>{
+        return ele.title=="Saree";
+    })
+    Displaydata(itm);
+}
+function item2(){
+    let itm=womens.filter((ele)=>{
+        return ele.title=="Jacket";
+    })
+    Displaydata(itm);
+}
+function item3(){
+    let itm=womens.filter((ele)=>{
+        return ele.title=="Kurtas";
+    })
+    Displaydata(itm);
+}
+function item4(){
+    let itm=womens.filter((ele)=>{
+        return ele.title=="Shoes";
+    })
+    Displaydata(itm);
+}
+function item5(){
+    let itm=womens.filter((ele)=>{
+        return ele.title=="Top";
+    })
+    Displaydata(itm);
+}
+function item6(){
+    let itm=womens.filter((ele)=>{
+        return ele.title=="Jeans";
+    })
+    Displaydata(itm);
+}
+
+
+
             
    
     

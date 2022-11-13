@@ -2,7 +2,7 @@ mydata=JSON.parse(localStorage.getItem("wishlist-item"));
 
 cartlist=JSON.parse(localStorage.getItem("cart-item"))||[];
 
-document.querySelector("#wishlist-total>span").innerText=mydata.length;
+document.querySelector("#wishlist-total>span").innerText=mydata.length +" items";
 
 Displaydata(mydata);
 
