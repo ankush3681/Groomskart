@@ -1,25 +1,22 @@
-
 #navbar {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     width: 100%;
     height: 70px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: white;
     position: fixed;
     top: 0px;
-    z-index:1;
 }
 
-#logo-main {
+#navbar>div:nth-child(1) {
     width: 10%;
     height: 100%;
     margin-left: 30px;
     cursor: pointer;
 }
 
-#logo {
+#navbar>div:nth-child(1) img {
     width: 100%;
     height: 100%;
 }
@@ -65,7 +62,6 @@
 }
 
 
-/* ---------------------------------------------------------------------- */
 
 #footer {
     width: 70%;
@@ -203,232 +199,101 @@
     line-height: 10px;
 }
 
-#footer>div:nth-child(3) {
-    width: 100%;
-    height: auto;
-    color: grey;
-    font-size: 14px;
-    line-height: 20px;
-}
-
-#footer>div:nth-child(3) h3 {
-    font-size: 13px;
-    color: rgb(81, 74, 74);
-    margin-bottom: -10px;
-
-}
-
-#footer>div:nth-child(3)>div:nth-child(3) {
-    padding-left: 30px;
-}
-
-#footer>div:nth-child(3)>div:nth-child(3) strong {
-    color: rgb(81, 74, 74);
-
-}
-
-#footer>div:nth-child(3)>div:nth-child(1) {
-    margin-bottom: 30px;
-}
-
-#footer>div:nth-child(3)>div:nth-child(4) {
-    margin-bottom: 30px;
-}
-
-#footer>div:nth-child(4) {
-    width: 100%;
-    height: auto;
-}
-
-#footer>div:nth-child(4)>div>ul {
-    color: grey;
-    font-size: 14px;
-}
-
-#footer>div:nth-child(4)>div>ul>li {
-    line-height: 30px;
-}
-
-#footer>div:nth-child(4)>div>strong {
-    margin-bottom: 0px;
-    color: rgb(81, 74, 74);
-    font-size: 14px;
-}
-
-#footer>div:nth-child(5) {
-    width: 100%;
-    height: auto;
-    margin-top: 30px;
-}
-
-#footer>div:nth-child(5) {
-    color: grey;
-    font-size: 14px;
-    line-height: 20px;
-}
-
-#footer>div:nth-child(5) strong {
-    color: rgb(81, 74, 74);
-    font-size: 14px;
-}
-
-#footer>div:nth-child(6) {
-    width: 100%;
-    height: 500px;
-    color: grey;
-    font-size: 14px;
-    margin-top: 30px;
-}
-
-#footer>div:nth-child(6)>div>h4 {
-    color: rgb(81, 74, 74);
-    font-size: 14 px;
-    line-height: 0px;
-}
-
-/* -------------------------------------------------------------------- */
-
-
-
-/* day-2 ends  */
-
-
-#products img{
-    width:100%;
-    cursor: pointer;
-}
-
-#products h1{
- margin: 50px 0px 50px 30px;
-font-family:sans-serif;
-color:#3E4152;
-font-weight: 500;
-}
-
-#dealofday{
-    width:100%;
-    display: grid;
-    grid-template-columns: repeat(9,1fr);
-    grid-template-rows: auto;
-
-}
- #picks{
-    width:100%;
-    display: grid;
-    grid-template-columns: repeat(7,1fr);
-    grid-template-rows: auto;
-
-}
-#category{
-    width:100%;
-    display: grid;
-    grid-template-columns: repeat(8,1fr);
-    grid-template-rows: auto;
-
-}
-#gftcard{
-    width:100%;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: auto;
-
-} 
-#trendher{
-    width:100%;
-    display: grid;
-    grid-template-columns: repeat(8,1fr);
-    grid-template-rows: auto;
-
-} 
-#trendher >img{
-    width:100%;
-}
-
-#trendhim{
-    width:100%;
-    display: grid;
-    grid-template-columns: repeat(8,1fr);
-    grid-template-rows: auto;
-} 
-#bestkids{
-    width:100%;
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-rows: auto;
-} 
-#stylecast{
-    width:100%;
-    display: grid;
-    grid-template-columns: repeat(7,1fr);
-    grid-template-rows: auto;
-} 
-#newbrand{
-    width:100%;
-    display: grid;
-    grid-template-columns: repeat(8,1fr);
-    grid-template-rows: auto;
-} 
-#spring{
-    width:100%;
-    display: grid;
-    grid-template-columns: repeat(8,1fr);
-    grid-template-rows: auto;
-} 
-#unmissable{
-    width:100%;
-    display: grid;
-    grid-template-columns: repeat(8,1fr);
-    grid-template-rows: auto;
-} 
-#grooming{
-    width:100%;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows:auto;
-} 
-#colors{
-    width:100%;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows:auto;
-} 
-#newness{
-    width:100%;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows:auto;
-} 
-#influencer{
-    width:100%;
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-rows:auto;
-} 
-#budget{
-    width:100%;
-    display: grid;
-    grid-template-columns: repeat(8,1fr);
-    grid-template-rows:auto;
-} 
-
-#trending{
-    width:100%;
-    display: grid;
-    grid-template-columns: repeat(8,1fr);
-    grid-template-rows:auto;
-} 
-
-
-
 #slider{
-    width:100%;
-    height:auto;
-    margin-top: 100px;
+    margin-top:100px;
+   
 }
-#slider img{
+#slider >img{
     width:100%;
-    border-radius:10px;
+    border-radius: 10px;
+}
+
+
+#container{
+    display: flex;
+}
+
+#features{
+    width:17%;
+    height:1200px;
+    margin-top: 80px;
+}
+
+.section-1{
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+.section-1 >h3{
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 5px;
+ }
+ 
+ #price_filter{
+    width:90%;
+    font-size: 15px;
+    margin: 0px 15px 20px 15px;
+    padding:5px 0px 5px 0px;
+ }
+
+ .section-2{
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+ }
+
+ #brand_filter{
+    width:90%;
+    font-size: 15px;
+    margin: 10px 15px 20px 15px;
+    padding:5px 0px 5px 0px;
+ }
+
+ .section-2 >h3{
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 5px;
+
+ }
+
+
+
+
+
+
+
+#products{
+    width:83%;
+    height:auto;
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto;
+    gap:20px;
+}
+#products>div >img{
+    width:100%;
     cursor: pointer;
 }
+#products div{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    height:auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+#products >div > button{
+    background-color: rgb(154, 154, 247);
+    color:white;
+    border:0;
+    padding:10px 10px;
+    font-size: 15px;
+    width:100%;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+ }
+
+ #products >div > button:hover{
+    background-color: rgb(237, 170, 170);
+ }
 
 

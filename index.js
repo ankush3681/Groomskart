@@ -1,3 +1,26 @@
+  
+  
+   let arr=[
+    "./slider image/slider-1.webp",
+    "./slider image/slider-2.webp",
+    "./slider image/slider-3.webp",
+    "./slider image/slider-4.webp",
+    "./slider image/slider-5.webp",
+    "./slider image/slider-6.webp",
+    "./slider image/slider-7.webp",
+    "./slider image/slider-8.webp",
+    "./slider image/slider-9.webp"
+];
+let i=0;
+ let int=setInterval(() => {
+   
+        document.querySelector("#slider-image").src=arr[i];
+       i++;
+       if(i>8){
+        i=0;
+       }
+  
+}, 4000);
 
 
 {
@@ -65,6 +88,7 @@ dealday.map((ele)=>{
     ]
 
     gftcard.map((ele)=>{
+       return
         let img=document.querySelector("img");
         img.setAttribute("src",ele);
         document.querySelector("#gftcard").append(img);
@@ -85,11 +109,13 @@ dealday.map((ele)=>{
     "https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/3/17/6eed6ace-940e-47d4-8441-a362c2c4fba11647516398904-SS22-Trends-Women-Blouson-Tops.jpg",
     
     "https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/25/a39069f5-a7c9-4a57-81a0-bd6f5eb65b061645776096638-SS22-Trends-Women-Minimalist-Jewellery.jpg",
+    // "https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/25/a39069f5-a7c9-4a57-81a0-bd6f5eb65b061645776096638-SS22-Trends-Women-Minimalist-Jewellery.jpg",
     
     "https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/3/17/80692309-98b1-4572-905b-6dcac3ecf32a1647516398938-SS22-Trends-Women-Gota-Patti-Kurtas.jpg"
 ];
 
 trendher.map((ele)=>{
+    
     let img=document.createElement("img");
     img.setAttribute("src",ele);
 

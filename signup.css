@@ -64,6 +64,8 @@
 
 
 
+
+
 body{
     background-color:rgb(252, 242, 242);
 }
@@ -71,7 +73,7 @@ body{
 width: 30%;
 height:550px;
 margin:auto;
-margin-top: 100px;
+margin-top: 75px;
 }
 #signin >div:nth-child(1){
 border-radius: 5px;
@@ -111,7 +113,7 @@ color:black;
 color:#ff3c6f;
 cursor: pointer;
 }
-#signin >div:nth-child(2) >div:nth-child(4){
+#signin >div:nth-child(2) >div:nth-child(7){
 font-size: 15px;
 width:80%;
 margin: 25px 0px 25px 32px;
