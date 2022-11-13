@@ -219,39 +219,59 @@
     margin-top: 80px;
 }
 
-.section-1{
-    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+#price_filter{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 20px 20px 20px 20px;
+    line-height: 10px;
+    
 }
-.section-1 >h3{
-    text-align: center;
-    font-family: sans-serif;
-    padding-top: 5px;
- }
- 
- #price_filter{
-    width:90%;
+#price_filter p{
     font-size: 15px;
-    margin: 0px 15px 20px 15px;
-    padding:5px 0px 5px 0px;
- }
-
- .section-2{
-    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
- }
-
- #brand_filter{
-    width:90%;
-    font-size: 15px;
-    margin: 10px 15px 20px 15px;
-    padding:5px 0px 5px 0px;
- }
-
- .section-2 >h3{
-    text-align: center;
+    cursor: pointer;
+}
+#price_filter h3{
     font-family: sans-serif;
-    padding-top: 5px;
+    color:blue;
+}
+#price_filter p:hover{
+    color:red;
+}
 
- }
+#child{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 20px 20px 20px 20px;
+    line-height: 10px;
+    margin-top: 30px;
+}
+#child p{
+    font-size: 15px;
+    cursor: pointer;
+}
+#child h3{
+    font-family: sans-serif;
+    color:blue;
+}
+#child p:hover{
+    color:red;
+}
+
+#item_filter{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 20px 20px 20px 20px;
+    line-height: 10px;
+    margin-top: 30px;
+}
+#item_filter p{
+    font-size: 15px;
+    cursor: pointer;
+}
+#item_filter h3{
+    font-family: sans-serif;
+    color:blue;
+}
+#item_filter p:hover{
+    color:red;
+}
 
 
 

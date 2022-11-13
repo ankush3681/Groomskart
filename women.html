@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>singup/signin</title>
+    <title>womens</title>
     <link rel="stylesheet" href="women.css">
 </head>
 <body>
@@ -38,26 +38,29 @@
     
    <div id="container">
     <div id="features">
-        <div class="section-1">
-            <h3>Price</h3>
-            <select name="price_price" id="price_filter">
-               <option value="">Sort Price</option>
-               <option value="LTH">Low to High</option>
-               <option value="HTL">High to Low</option>
-            </select>
-       </div>
-       <div class="section-2">
-           <h3>Brand</h3>
-           <select id="brand_filter">
-               <option value="">Sort By Brand</option>
-               <option value="Puma">Puma</option>
-               <option value="Wrong">Wrong</option>
-               <option value="Adidas">Adidas</option>
-               <option value="Campus">Campus</option>
-               <option value="Roadster">Roadster</option>
-               
-           </select>
-       </div>
+        <div id="price_filter">
+            <h3>SORT BY PRICE</h3>
+            <p onclick="myfun1()">Low to High</p>
+            <p onclick="myfun2()">High to Low</p>
+         </div>
+         <div id="brand_filter">
+            <h3>FILTER BY BRAND</h3>
+            <p onclick="brand1()">Puma</p>
+            <p onclick="brand2()">Roadster</p>
+            <p onclick="brand3()">Wrong</p>
+            <p onclick="brand4()">Adidas</p>
+            <p onclick="brand5()">Campus</p>
+         </div>
+         <div id="item_filter">
+            <h3>SELECT ITEM</h3>
+            <p onclick="item1()">Sarees</p>
+            <p onclick="item2()">Jackets</p>
+            <p onclick="item3()">Kurtas</p>
+            <p onclick="item4()">Shoes</p>
+            <p onclick="item5()">Tops</p>
+            <p onclick="item6()">Jeans</p>
+         </div>
+
     </div>
 
     <div id="items">

@@ -32,19 +32,10 @@ fetch(url)
 
 
 
-document.querySelector("#bfilter").addEventListener("change",function(){
-    let selected=document.querySelector("#bfilter").value;
-    let ans=bag.filter((ele)=>{
-            return (ele.brand==selected);
-        
-            })
-            Displaycard(ans);
-
-})
-
 wishlist=JSON.parse(localStorage.getItem("wishlist-item")) ||[];
 
 
+// searchbar Selection 
 
 document.querySelector("#searchbar").addEventListener("input",function(){
     let q=document.querySelector("#searchbar").value;
@@ -83,21 +74,92 @@ function Displaydata(data){
         
 }
 
-document.querySelector("#price_filter").addEventListener("change",function(){
-    let select=document.querySelector("#price_filter").value;
-    if(select="HTL"){
-        bag.sort((a,b)=>{
-            return (b.price-a.price);
-        })
-        Displaydata(bag);
-    }
-     else if(select="LTH"){
-        bag.sort((a,b)=>{
-            return (a.price-b.price);
-        })
-        Displaydata(bag);
-    }
-})
+// price sort
+function myfun1(){
+    bag.sort((a,b)=>{
+        return (a.price-b.price);
+    })
+    Displaydata(bag);
+}
+function myfun2(){
+    bag.sort((a,b)=>{
+        return (b.price-a.price);
+    })
+    Displaydata(bag);
+}
+
+
+// brand select
+
+function brand1(){
+    let ans=bag.filter((ele)=>{
+       return ele.brand=="Puma";
+    })
+    Displaydata(ans);
+}
+function brand2(){
+    let ans=bag.filter((ele)=>{
+       return ele.brand=="Roadster";
+    })
+    Displaydata(ans);
+}
+function brand3(){
+    let ans=bag.filter((ele)=>{
+       return ele.brand=="Wrong";
+    })
+    Displaydata(ans);
+}
+function brand4(){
+    let ans=bag.filter((ele)=>{
+       return ele.brand=="Adidas";
+    })
+    Displaydata(ans);
+}
+function brand5(){
+    let ans=bag.filter((ele)=>{
+       return ele.brand=="Campus";
+    })
+    Displaydata(ans);
+}
+
+// items select
+
+function item1(){
+    let itm=bag.filter((ele)=>{
+        return ele.title=="Shirt";
+    })
+    Displaydata(itm);
+}
+function item2(){
+    let itm=bag.filter((ele)=>{
+        return ele.title=="Jacket";
+    })
+    Displaydata(itm);
+}
+function item3(){
+    let itm=bag.filter((ele)=>{
+        return ele.title=="Kurtas";
+    })
+    Displaydata(itm);
+}
+function item4(){
+    let itm=bag.filter((ele)=>{
+        return ele.title=="Shoes";
+    })
+    Displaydata(itm);
+}
+function item5(){
+    let itm=bag.filter((ele)=>{
+        return ele.title=="T-Shirt";
+    })
+    Displaydata(itm);
+}
+function item6(){
+    let itm=bag.filter((ele)=>{
+        return ele.title=="Jeans";
+    })
+    Displaydata(itm);
+}
 
 
 
