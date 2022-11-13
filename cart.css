@@ -204,7 +204,6 @@
 #items{
     width:61%;
     margin:auto;
-    border:1px solid red;
     display: grid;
     grid-template-columns: repeat(5,1fr);
     gap:15px;
