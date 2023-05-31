@@ -12,3 +12,12 @@ This project is deployed on netlify :- https://brilliant-gnome-813844.netlify.ap
 
 <h2>Features</h2>
 
+<ul>
+   <li>Sorting by price</li>
+   <li>Filter by brand</li>
+   <li>Filter by Item</li>
+   <li>Search by Item</li>
+   <li>Whistlist </li>
+   <li>Cart</li>
+</ul>
+
