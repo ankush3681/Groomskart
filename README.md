@@ -10,6 +10,17 @@ This project is deployed on netlify :- https://brilliant-gnome-813844.netlify.ap
 
 <img src="https://brilliant-gnome-813844.netlify.app/slider%20image/slider-1.webp" alt="slider image"/>
 
+<h2>Tech Stack</h2>
+
+<ul>
+   <ul>HTML</ul>
+   <ul>Css</ul>
+   <ul>Javascript</ul>
+</ul>
+
+
+<img src="https://brilliant-gnome-813844.netlify.app/slider%20image/slider-3.webp" alt="slider image"/>
+
 <h2>Features</h2>
 
 <ul>
