@@ -4,7 +4,7 @@
 
 This project is clone of website myntra which deals with lifestyle fashion for all categories, it is an individual project which is buit in a span of 5 days.
 
-<h2 text-decoration="underline">Deployed link</h2>
+<h2>Deployed link</h2>
 
 This project is deployed on netlify :- https://brilliant-gnome-813844.netlify.app/index.html
 
