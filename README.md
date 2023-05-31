@@ -13,9 +13,9 @@ This project is deployed on netlify :- https://brilliant-gnome-813844.netlify.ap
 <h2>Tech Stack</h2>
 
 <ul>
-   <ul>HTML</ul>
-   <ul>Css</ul>
-   <ul>Javascript</ul>
+   <li>HTML</li>
+   <li>CSS</li>
+   <li>Javascript</li>
 </ul>
 
 
